@@ -11,5 +11,4 @@ location / {
     }
     rewrite ^/([a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)$ /index.php?note=$1 last;
    }
-}
 add_header  X-Robots-Tag "noindex, nofollow, nosnippet, noarchive";
